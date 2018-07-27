@@ -24,6 +24,10 @@ body {
       position: absolute;
       width: .5em;
       -webkit-mask-image: radial-gradient(circle at top right, transparent 67%, black 70%);
+
+      .myui--has-vibrancy & {
+        background: @vibrancy-background;
+      }
     }
   }
 }
