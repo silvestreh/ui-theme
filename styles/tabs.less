@@ -29,11 +29,10 @@
 
   .tab {
     background-color: @tab-background-color;
-    color: @text-color;
+    color: fade(contrast(@tab-background-color), 40%);
     height: @tab-height;
     line-height: @tab-height;
     font-size: @font-size;
-    width: 179px;
     -webkit-app-region: no-drag;
 
     &.active {
