@@ -1,9 +1,16 @@
 .atom-dock-resize-handle {
-  &.left {
+  &.left, &.right {
     position: absolute;
     top: 0;
     bottom: 0;
-    right: 0;
     z-index: 999;
+  }
+
+  &.left {
+    right: 0;
+  }
+
+  &.right {
+    left: 0;
   }
 }
