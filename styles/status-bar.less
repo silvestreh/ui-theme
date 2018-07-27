@@ -1,0 +1,24 @@
+
+// Status Bar
+// -------------------
+
+// Located at the bottom.
+// Displays information about the current editor.
+// Overrides: atom/status-bar
+
+.status-bar {
+  font-size: @font-size;
+  color: @tree-view-text-color;
+  border-top: 1px solid @tree-view-background-color;
+  background-color: @tree-view-background-color;
+
+  a, .cursor-position a {
+    color: @tree-view-text-color;
+  }
+}
+
+.github-StatusBarTileController {
+  .github-branch-detached {
+    color: @tree-view-text-color;
+  }
+}

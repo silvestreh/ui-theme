@@ -1,0 +1,44 @@
+.settings-view {
+  .config-menu {
+    .nav {
+      li {
+        &.active > a {
+          background-color: mix(@text-color, @tree-view-background-color, 70%);
+          color: @base-background-color;
+        }
+      }
+    }
+  }
+
+  select.form-control {
+    background-color: @button-background-color;
+    box-shadow:
+      0 .0625em .25em rgba(0, 0, 0, .1),
+      0 .25em 1em rgba(0, 0, 0, .05);
+    border-radius: @component-border-radius;
+    color: lighten(@text-color, 6%);
+
+    &:hover, &:focus {
+      background-color: @button-background-color;
+      box-shadow:
+        0 .0625em .25em rgba(0, 0, 0, .1),
+        0 .25em 1em rgba(0, 0, 0, .05);
+      color: lighten(@text-color, 6%);
+    }
+
+    &:active {
+      background-color: darken(@button-background-color, 2%);
+      box-shadow: inset 0 .125em .25em rgba(0, 0, 0, .1);
+      color: fade(@text-color-selected, 66%);
+    }
+  }
+
+  .themes-panel {
+    .themes-picker-item {
+      .btn {
+        background: none;
+        box-shadow: none;
+      }
+    }
+  }
+}

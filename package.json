@@ -1,0 +1,16 @@
+{
+  "name": "my-ui-theme",
+  "theme": "ui",
+  "version": "0.0.0",
+  "description": "A short description of your UI theme",
+  "main": "./lib/main",
+  "keywords": [
+    "ui",
+    "theme"
+  ],
+  "repository": "https://github.com/silvestreh/my-ui-theme",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.16.0 <2.0.0"
+  }
+}
