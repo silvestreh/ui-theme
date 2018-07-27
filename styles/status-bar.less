@@ -15,11 +15,20 @@
 
   a, .cursor-position a {
     color: @tree-view-text-color;
+
+    &:hover {
+      color: @tree-view-text-color;
+    }
   }
 
   .myui--has-vibrancy & {
     background-color: @vibrancy-background;
+
+    &.platformio-ide-terminal {
+      background-color: transparent;
+    }
   }
+
 }
 
 .github-StatusBarTileController {
