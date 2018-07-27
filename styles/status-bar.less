@@ -7,13 +7,18 @@
 // Overrides: atom/status-bar
 
 .status-bar {
-  font-size: @font-size;
-  color: @tree-view-text-color;
-  border-top: 1px solid @tree-view-background-color;
   background-color: @tree-view-background-color;
+  border-top: none;
+  border-radius: 0;
+  color: @tree-view-text-color;
+  font-size: @font-size;
 
   a, .cursor-position a {
     color: @tree-view-text-color;
+  }
+
+  .myui--has-vibrancy & {
+    background-color: @vibrancy-background;
   }
 }
 

@@ -35,3 +35,26 @@ atom-pane {
     border-right: none;
   }
 }
+
+.myui--has-vibrancy {
+  background-color: transparent;
+
+  body,
+  atom-workspace,
+  .tool-panel {
+    background-color: transparent;
+  }
+
+  * {
+    border-color: fade(@text-color, 10%) !important;
+  }
+
+  atom-text-editor .cursor {
+    border-color: lighten(@theme-color, 30%) !important;
+  }
+
+  atom-text-editor .gutter .line-number.cursor-line,
+  atom-text-editor .line.cursor-line {
+    background-color: fade(@text-color-selected, 4%);
+  }
+}

@@ -7,7 +7,6 @@
 
 @color-item-selected: @tree-view-background-color;
 
-
 .tree-view-resizer {
   border-right: 1px solid @base-border-color;
 }
@@ -18,11 +17,35 @@
   .list-item {
     color: @tree-view-text-color;
 
+    .myui--has-vibrancy & {
+      color: rgba(255, 255, 255, .7);
+    }
+
+    &.status-modified {
+      color: @text-color-warning;
+    }
+
+    &.status-added {
+      color: @text-color-success;
+    }
+
+    &.status-removed {
+      color: @text-color-error;
+    }
+
+    &.status-renamed {
+      color: @text-color-info;
+    }
+
     &.selected {
       color: @color-item-selected;
 
       &::before {
         background-color: lighten(@tree-view-background-color, 55%);
+
+        .myui--has-vibrancy & {
+          background-color: rgba(255, 255, 255, .75);
+        }
       }
     }
   }

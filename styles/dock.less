@@ -1,3 +1,16 @@
+.myui--has-vibrancy {
+  atom-dock.left {
+    background-color: @vibrancy-background;
+
+    .item-views,
+    .tab-bar,
+    .tab-bar .tab.active,
+    .atom-dock-mask {
+      background-color: transparent;
+    }
+  }
+}
+
 .atom-dock-resize-handle {
   &.left, &.right {
     position: absolute;
