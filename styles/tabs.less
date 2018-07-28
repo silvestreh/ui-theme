@@ -35,6 +35,14 @@
     font-size: @font-size;
     -webkit-app-region: no-drag;
 
+    &:first-child {
+      border-top-left-radius: .5em;
+    }
+
+    &:last-child {
+      border-top-right-radius: .5em;
+    }
+
     &.active {
       color: @text-color-selected;
       background-color: @tab-background-color-active;
