@@ -11,6 +11,33 @@
   }
 }
 
+atom-dock {
+  position: relative;
+
+  &.right {
+    &::before {
+      content: '';
+      position: absolute;
+      right: 100%;
+      width: 1em;
+      top: 0;
+      bottom: 0;
+      background: linear-gradient(to left, black, transparent);
+      opacity: .05;
+    }
+
+    .atom-dock-mask {
+      .myui--has-vibrancy & {
+        background-color: transparent;
+
+        .item-views {
+          background: @base-background-color;
+        }
+      }
+    }
+  }
+}
+
 .atom-dock-resize-handle {
   &.left, &.right {
     position: absolute;
