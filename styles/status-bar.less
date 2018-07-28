@@ -23,12 +23,15 @@
 
   .myui--has-vibrancy & {
     background-color: @vibrancy-background;
-
-    &.platformio-ide-terminal {
-      background-color: transparent;
-    }
   }
 
+  &.platformio-ide-terminal {
+    background-color: transparent;
+
+    i, .icon-x {
+      color: @tree-view-text-color;
+    }
+  }
 }
 
 .github-StatusBarTileController {
