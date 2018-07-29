@@ -13,10 +13,15 @@
   overflow-x: auto;
   overflow-y: hidden;
   padding-left: 7em;
+  transition: padding 500ms;
   -webkit-app-region: drag;
 
   .myui--has-vibrancy & {
     background-color: @vibrancy-background;
+  }
+
+  atom-dock.left &, atom-dock.right & {
+    padding-left: 0;
   }
 
   &:empty {
@@ -36,11 +41,28 @@
     -webkit-app-region: no-drag;
 
     &:first-child {
-      border-top-left-radius: .5em;
+      border-top-left-radius: @component-border-radius;
+      position: relative;
+
+      &::before {
+        background: @tab-background-color;
+        bottom: 0;
+        content: '';
+        height: @component-border-radius;
+        right: 100%;
+        pointer-events: none;
+        position: absolute;
+        width: @component-border-radius;
+        -webkit-mask-image: radial-gradient(circle at top left, transparent 67%, black 70%);
+      }
+
+      &.active::before {
+        background: @tab-background-color-active;
+      }
     }
 
     &:last-child {
-      border-top-right-radius: .5em;
+      border-top-right-radius: @component-border-radius;
     }
 
     &.active {
@@ -55,11 +77,11 @@
         background: @tab-background-color;
         bottom: 0;
         content: '';
-        height: .5em;
+        height: @component-border-radius;
         left: 100%;
         pointer-events: none;
         position: absolute;
-        width: .5em;
+        width: @component-border-radius;
         -webkit-mask-image: radial-gradient(circle at top right, transparent 67%, black 70%);
       }
 
@@ -73,7 +95,7 @@
       top: 50%;
       right: @component-padding + 4px; // 4px -> half of icon size
       margin-top: -3px;
-      border-color: @text-color-info;
+      border-color: @text-color !important;
     }
 
     &.modified:hover .close-icon {
