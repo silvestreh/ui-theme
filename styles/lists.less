@@ -12,8 +12,12 @@
 
     // We want to highlight the background of the list items because we dont know their size.
     &.selected {
-      color: contrast(@theme-color);
-      background-color: lighten(@theme-color, 20%);
+      color: fade(@base-background-color, 80%);
+      background-color: @text-color;
+
+      .character-match {
+        color: @base-background-color;
+      }
 
       &:before{
         display: none;
