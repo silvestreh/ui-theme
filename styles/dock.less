@@ -1,17 +1,3 @@
-.myui--has-vibrancy {
-  atom-dock.left {
-    background-color: @vibrancy-background;
-
-    .item-views,
-    .tab-bar,
-    .tab-bar .tab.active,
-    .atom-dock-mask {
-      background-color: transparent;
-    }
-  }
-}
-
-
 atom-dock {
   position: relative;
 
@@ -36,6 +22,33 @@ atom-dock {
         }
       }
     }
+  }
+
+  &.left {
+    .myui--has-vibrancy & {
+      background-color: @vibrancy-background;
+
+      .item-views,
+      .tab-bar,
+      .tab-bar .tab.active,
+      .atom-dock-mask {
+        background-color: transparent;
+      }
+    }
+  }
+
+  &.right {
+    .myui--has-vibrancy & {
+      .tab-bar {
+        background: @vibrancy-background;
+      }
+    }
+  }
+}
+
+.atom-dock-mask {
+  &:not(:active) {
+    transition: width 500ms;
   }
 }
 
