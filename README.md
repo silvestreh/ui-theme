@@ -2,4 +2,8 @@
 
 I don't know… I guess it's kinda minimalist? Has vibrancy support, but it's kinda buggy and only available on macOS.
 
-![A screenshot of your theme](https://i.imgur.com/TGT0Lpk.jpg)
+![With tree-view](https://i.imgur.com/Kq0w9LB.jpg)
+
+![Without tree-view](https://i.imgur.com/pGZLt4C.jpg)
+
+![Github panel](https://i.imgur.com/12oXsKe.jpg)
