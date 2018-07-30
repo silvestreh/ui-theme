@@ -1,0 +1,28 @@
+.myui--has-vibrancy .nuclide {
+  &-file-tree {
+    background-color: transparent;
+
+    &-section-caption h6 {
+      color: @tree-view-text-color;
+    }
+
+    &-toolbar-container {
+      background-color: transparent;
+    }
+
+    &-open-files-list, &-uncommitted-changes-container {
+      .nuclide-path-with-terminal {
+        color: @tree-view-text-color;
+
+        .selected &, &.selected {
+          color: @tree-view-text-color-selected;
+        }
+      }
+    }
+
+    .btn {
+      background-color: fade(@button-background-color, 20%);
+      color: @tree-view-text-color;
+    }
+  }
+}
