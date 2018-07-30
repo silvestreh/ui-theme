@@ -21,3 +21,7 @@ apm link
 ```
 
 After that, you'll be able to pick the theme from Atom's settings.
+
+## Known issues 🐞
+
+I've only got one computer, a 2015 MacBook running macOS High Sierra `10.13.6`, and vibrancy it's buggy AF. It's not a theme issue, it's either Atom or macOS.
