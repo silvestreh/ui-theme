@@ -16,22 +16,24 @@ body {
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, .125);
   }
 
-  > atom-workspace > .horizontal > .vertical > .panes {
-    position: relative;
+  .myui--has-left-dock & {
+    > atom-workspace > .horizontal > .vertical > .panes {
+      position: relative;
 
-    &::after {
-      background: @tree-view-background-color;
-      bottom: 0;
-      content: '';
-      height: @component-border-radius;
-      left: 0;
-      pointer-events: none;
-      position: absolute;
-      width: @component-border-radius;
-      -webkit-mask-image: radial-gradient(circle at top right, transparent 67%, black 70%);
+      &::after {
+        background: @tree-view-background-color;
+        bottom: 0;
+        content: '';
+        height: @component-border-radius;
+        left: 0;
+        pointer-events: none;
+        position: absolute;
+        width: @component-border-radius;
+        -webkit-mask-image: radial-gradient(circle at top right, transparent 67%, black 70%);
 
-      .myui--has-vibrancy & {
-        background: @vibrancy-background;
+        .myui--has-vibrancy & {
+          background: @vibrancy-background;
+        }
       }
     }
   }
