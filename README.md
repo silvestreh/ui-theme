@@ -24,4 +24,4 @@ After that, you'll be able to pick the theme from Atom's settings.
 
 ## Known issues 🐞
 
-I've only got one computer, a 2015 MacBook running macOS High Sierra `10.13.6`, and vibrancy it's buggy AF. It's not a theme issue, it's either Atom or macOS.
+I've only got one computer, a 2015 MacBook running macOS High Sierra `10.13.6`, and vibrancy it's buggy AF. It's not a theme issue, it's [Electron](https://github.com/electron/electron/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+vibrancy).
