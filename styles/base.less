@@ -11,7 +11,7 @@ body {
   color: @text-color;
   background-color: @app-background-color;
 
-  .myui--has-vibrancy & {
+  .myui--has-vibrancy &, .myui--has-background-image & {
     border-radius: @component-border-radius / 4;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, .125);
   }
@@ -47,7 +47,24 @@ atom-pane {
   }
 }
 
+.myui--has-background-image:not(.myui--has-vibrancy) {
+  &::before {
+    background-color: fade(@vibrancy-background, 20%);
+    backdrop-filter: blur(50px);
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
 .myui--has-vibrancy {
+  background-image: none !important;
+}
+
+.myui--has-vibrancy, .myui--has-background-image {
   background-color: transparent;
 
   body,

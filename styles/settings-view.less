@@ -12,8 +12,9 @@
 
   select.form-control {
     background-color: @button-background-color;
+    border: none;
     box-shadow:
-      0 .0625em .25em rgba(0, 0, 0, .1),
+      0 .125em .25em rgba(0, 0, 0, .1),
       0 .25em 1em rgba(0, 0, 0, .05);
     border-radius: @component-border-radius;
     color: lighten(@text-color, 6%);
@@ -21,7 +22,7 @@
     &:hover, &:focus {
       background-color: @button-background-color;
       box-shadow:
-        0 .0625em .25em rgba(0, 0, 0, .1),
+        0 .125em .25em rgba(0, 0, 0, .1),
         0 .25em 1em rgba(0, 0, 0, .05);
       color: lighten(@text-color, 6%);
     }

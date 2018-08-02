@@ -14,7 +14,7 @@ atom-dock {
     }
 
     .atom-dock-mask {
-      .myui--has-vibrancy & {
+      .myui--has-vibrancy &, .myui--has-background-image & {
         background-color: transparent;
 
         .item-views {
@@ -23,15 +23,21 @@ atom-dock {
       }
     }
 
-    .myui--has-vibrancy & {
+    .myui--has-vibrancy &, .myui--has-background-image & {
       .tab-bar {
         background: @vibrancy-background;
       }
     }
   }
 
+  .atom-dock-inner {
+    &:not(.atom-dock-open) {
+      position: static;
+    }
+  }
+
   &.left {
-    .myui--has-vibrancy & {
+    .myui--has-vibrancy &, .myui--has-background-image & {
       background-color: @vibrancy-background;
 
       .item-views,
