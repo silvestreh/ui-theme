@@ -1,6 +1,6 @@
-# UI theme
+# Vibrance UI
 
-I don't know… I guess it's kinda minimalist? Has vibrancy support, but it's kinda buggy and only available on macOS. Also, it doesn't have a name yet so… _Something-Something-Vibrancy_?
+Atom UI theme with vibrancy support. Vibrancy it's kinda buggy and only available on macOS. You can use a background image to _imitate_ the effect on unsupported platforms (Windows and GNU/Linux).
 
 Based on Simurai's starter template.
 
@@ -12,15 +12,13 @@ Based on Simurai's starter template.
 
 ## Install
 
-Ok, you've _probably_ noticed there's no package. That's because I still haven't pushed one to APM, so you'll have to get your hands dirty and put this in a terminal:
+Fire up a Terminal and type:
 
 ```shell
-git clone git@github.com:silvestreh/ui-theme.git
-cd ui-theme/
-apm link
+apm install vibrance-ui
 ```
 
-After that, you'll be able to pick the theme from Atom's settings.
+Or… within Atom's settings. After that, you'll be able to pick the theme from Atom's settings.
 
 ## Known issues 🐞
 
