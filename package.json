@@ -6,7 +6,10 @@
   "main": "./lib/main",
   "keywords": [
     "ui",
-    "theme"
+    "theme",
+    "vibrancy",
+    "clean",
+    "transparency"
   ],
   "repository": "https://github.com/silvestreh/ui-theme",
   "license": "MIT",
