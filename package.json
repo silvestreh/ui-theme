@@ -1,7 +1,7 @@
 {
   "name": "vibrance-ui",
   "theme": "ui",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "A clean looking theme with vibrancy support",
   "main": "./lib/main",
   "keywords": [
